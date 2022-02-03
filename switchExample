@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class SwitchEx {
+
+	public static void main(String[] args) {
+		System.out.println("Enter grade");
+		Scanner input= new Scanner(System.in);
+		char grade = input.next().charAt(0);   
+		switch (grade)
+		{
+		case 'A':
+			System.out.println("Excellent");
+	        break;
+	        
+		case 'B':
+			System.out.println("good");
+	        break;
+			
+		case 'C':
+			System.out.println("Average");
+	        break;
+	    default:
+	    	System.out.println("Invalid choice");
+		}
+	}
+
+}
